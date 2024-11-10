@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.container{
+    padding: 80px 20px;
+    display: grid;
+    grid-template-columns: 2fr repeat(2,1fr) 2fr;
+    gap: 20px;
+    /* border: 2px solid red; */
+    margin: auto;
+    background-color: #000;
+}
+.one{
+    margin-right: 20px;
+}
+.one > h4{
+    color: #fff;
+    font-size: 20px;
+}
+.one > p{
+    margin-top: 10px;
+    color: #a7a7a7;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+}
+p{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+    color: #a7a7a7;
+    margin-top: 15px;
+    font-size: 15px;
+
+}
+.two,
+.three{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    
+}
+.container-box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.news-letter-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    
+}
+.news-letter-box > input, button{
+    padding: 10px;
+    margin-top: 8px;
+    width: 70%;
+    border: 0;
+    border-radius: 5px;
+
+}
+.news-letter-box > button{
+    background-color: #1893f7;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 800px) {
+    .container{
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+    }
+}

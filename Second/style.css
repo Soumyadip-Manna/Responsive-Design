@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar{
+    background-color: #242b2e;
+    height: 50px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.large-screen{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.large-screen > img{
+    width: 40px;
+}
+.nav-links{
+    display: flex;
+    gap: 20px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.nav-links a:hover {
+    color: #76b5d3;
+    scale: 1.1;
+}
+.nav-login{
+    border: 0;
+    background-color: #0072e1;
+    padding: .35rem 1.6rem;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.small-screen{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 30px;
+}
+
+.small-screen > img{
+    width:30px;
+}
+
+.small-screen i{
+    font-size: 2rem;
+    color: #fff;
+}
+
+@media screen and (min-width: 800px) {
+    .small-screen{
+        display: none;
+    }
+    .large-screen{
+        display: flex;
+    }
+}
+
+
+/* Design Hero Section */
+.hero-section{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left-section{
+    margin-left: 20px;
+    height: 400px;
+    padding: 20px;
+}
+.left-section > h4{
+    margin-top: 20px;
+    font-size: 2rem;
+}
+.left-section > h1{
+    color:  #1893f7;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+.left-section > h3{
+    color:  #1893f7;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.left-section > p{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 27px;
+
+}
+.left-section > img{
+    width: 35%;
+}
+
+.right-section > video{
+    width: 350px;
+    height: 350px;
+}
+
+@media screen and (min-width:800px) {
+    .hero-section{
+        flex-direction: row;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .right-section > video {
+        width: 600px;
+        height: 600px;
+      }
+}
